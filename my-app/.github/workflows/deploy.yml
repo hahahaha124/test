@@ -2,6 +2,23 @@ name: NextJS Pipeline
 
 on: 
   push:
-    branches:
-    - master
+    branches: ["master", "1-issue-1"]
     
+jobs: 
+  job1:
+      name: job1
+      runs-on: ubuntu-latest
+      steps:
+        - name: First step
+          run: echo "step 1"
+
+        - name: create
+          run: touch job1.txt
+
+  job2:
+      name: job2
+      runs-on: ubuntu-latest
+      steps:
+        - name: First step job2
+          run: ls -l
+          
