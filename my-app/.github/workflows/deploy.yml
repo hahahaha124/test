@@ -1,0 +1,7 @@
+name: NextJS Pipeline
+
+on: 
+  push:
+    branches:
+    - master
+    
