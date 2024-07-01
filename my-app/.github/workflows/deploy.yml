@@ -2,8 +2,7 @@ name: NextJS Pipeline
 
 on: 
   push:
-    branches:
-    - master
+    branches: ["master", "1-issue-1"]
     
 jobs: 
   job1:
